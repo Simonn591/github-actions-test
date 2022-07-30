@@ -27,6 +27,10 @@ jobs:
       - uses: actions/setup-node@v2 #Optionally downloading and caching distribution of the requested Node.js version, and adding it to the PATH
         with:
           node-version: '14.17.0'
-      - run: node -v
-      - run: echo "hello world!" #za pomlčkou mezera
-      - run: tree  #zobrazení stromové struktury
+      #- run: node -v
+      #- run: echo "hello world!" #za pomlčkou mezera
+      #- run: tree  #zobrazení stromové struktury
+      - name: Build the project
+        run: yarn build
+      - name: setup finish
+        run: echo "hotovo!"
