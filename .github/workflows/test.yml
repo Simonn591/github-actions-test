@@ -23,4 +23,6 @@ jobs:
   print-hello-world:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "hello world!"
+      - uses: actions/checkout@v2
+      - run: echo "hello world!" #za pomlčkou mezera
+      - run: tree 
