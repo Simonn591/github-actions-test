@@ -1,1 +1,27 @@
-123
+#example:
+
+#myapp:
+#  service: project1
+#  test1: script1
+#  test2: script2
+#  array:
+#    -
+#      key1: value1
+#      key1detail: neco
+#    -
+#      key2: value2
+#    -
+#      key3: value3
+#  MultiLineString: |
+#    1st line
+#    2nd line
+#    3rd line
+
+name: GitHub Action test
+on: [push] #push - kdykoliv přijde commit, spusť tuto akci
+jobs:
+  print-hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      -run: echo "hello world!"
+      -run: echo "2nd step"
