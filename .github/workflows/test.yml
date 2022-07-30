@@ -30,9 +30,10 @@ jobs:
       #- run: node -v
       #- run: echo "hello world!" #za pomlčkou mezera
       #- run: tree  #zobrazení stromové struktury
-      - name: instal node modules
-        run: yarn
-      - name: build the project
-        run: yarn build
-      - name: setup finish
-        run: echo "hotovo!"
+      #- name: instal node modules
+      #  run: yarn
+      #- name: build the project
+      #  run: yarn build
+      #- name: setup finish
+      #  run: echo "hotovo!"
+      
