@@ -23,6 +23,10 @@ jobs:
   print-hello-world:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v2 #action that checked out your repository to the computer that runs the action
+      - uses: actions/setup-node@v2 #Optionally downloading and caching distribution of the requested Node.js version, and adding it to the PATH
+        with:
+          node-version: '14.17.0'
+      - run: node -v
       - run: echo "hello world!" #za pomlčkou mezera
-      - run: tree 
+      - run: tree  #zobrazení stromové struktury
